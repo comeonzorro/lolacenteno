@@ -9,8 +9,8 @@
   --line: rgba(17, 17, 17, 0.1);
   --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
   --sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --radius: 20px;
-  --radius-sm: 12px;
+  --radius: 2px;
+  --radius-sm: 2px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --max: 1180px;
 }
@@ -387,8 +387,14 @@ img {
   justify-content: space-between;
   gap: 1.25rem;
   padding: 1.35rem 1.5rem;
-  background: var(--card);
+  background: var(--bg);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
+}
+
+.cv-row--contact {
+  margin-top: 2.5rem;
+  background: transparent;
 }
 
 .cv-row strong {
@@ -413,13 +419,13 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0.65rem 1.1rem;
-  border-radius: 999px;
+  border-radius: var(--radius);
   font: inherit;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: opacity 0.25s, transform 0.25s var(--ease);
+  transition: opacity 0.25s, background 0.25s;
 }
 
 .btn:hover {
@@ -502,19 +508,20 @@ img {
   width: 100%;
   padding: 1.25rem 1.35rem;
   margin-bottom: 0.65rem;
-  background: var(--card);
-  border: none;
-  border-radius: var(--radius-sm);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
   font: inherit;
   color: inherit;
   text-align: left;
   cursor: pointer;
-  transition: background 0.25s var(--ease), transform 0.25s var(--ease);
+  transition: background 0.2s, border-color 0.2s;
 }
 
 .archive-item:hover {
-  background: #e4e1db;
-  transform: translateY(-1px);
+  background: var(--bg-soft);
+  border-color: rgba(17, 17, 17, 0.2);
+  transform: none;
 }
 
 .archive-item__index {
@@ -599,8 +606,9 @@ img {
 .mosaic__item {
   margin: 0;
   overflow: hidden;
-  border-radius: var(--radius-sm);
-  background: var(--card);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
 }
 
 .mosaic__item img {
@@ -637,7 +645,8 @@ img {
   justify-content: space-between;
   gap: 1.25rem;
   padding: 1.35rem 1.5rem;
-  background: var(--card);
+  background: var(--bg);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   margin-top: 2.5rem;
 }
@@ -754,18 +763,21 @@ img {
 }
 
 .viewer__download,
+.viewer__open,
 .viewer__close {
   font-size: 0.78rem;
   font-weight: 500;
   color: var(--bg);
 }
 
-.viewer__download {
+.viewer__download,
+.viewer__open {
   opacity: 0.65;
   transition: opacity 0.3s;
 }
 
-.viewer__download:hover {
+.viewer__download:hover,
+.viewer__open:hover {
   opacity: 1;
 }
 

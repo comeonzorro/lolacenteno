@@ -35,30 +35,71 @@
   var closeViewerBtn = document.getElementById("viewer-close");
   var titleEl = document.getElementById("viewer-title");
   var downloadEl = document.getElementById("viewer-download");
+  var openTabEl = document.getElementById("viewer-open-tab");
   var iframe = document.getElementById("viewer-iframe");
+  var embed = document.getElementById("viewer-embed");
+  var fallback = document.getElementById("viewer-fallback");
+  var fallbackLink = document.getElementById("viewer-fallback-link");
   var imageWrap = document.getElementById("viewer-image-wrap");
   var imageEl = document.getElementById("viewer-image");
+
+  function isMobile() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  }
+
+  function absoluteUrl(src) {
+    try {
+      return new URL(src, window.location.href).href;
+    } catch (e) {
+      return src;
+    }
+  }
+
+  function hidePdfViews() {
+    iframe.hidden = true;
+    iframe.removeAttribute("src");
+    embed.hidden = true;
+    embed.removeAttribute("src");
+    fallback.hidden = true;
+  }
 
   function openViewer(opts) {
     var src = opts.src;
     var title = opts.title || "Document";
     var isPdf = opts.type === "pdf";
+    var url = absoluteUrl(src);
 
     titleEl.textContent = title;
     downloadEl.href = src;
     downloadEl.hidden = false;
+    openTabEl.href = url;
+    openTabEl.hidden = isPdf ? false : true;
+    fallbackLink.href = url;
+
+    imageWrap.hidden = true;
+    imageEl.removeAttribute("src");
+    hidePdfViews();
 
     if (isPdf) {
+      if (isMobile()) {
+        window.open(url, "_blank", "noopener");
+        return;
+      }
+
+      embed.hidden = false;
+      embed.src = url;
       iframe.hidden = false;
-      imageWrap.hidden = true;
-      imageEl.removeAttribute("src");
-      iframe.src = src;
+      iframe.src = url;
+
+      window.setTimeout(function () {
+        if (embed.hidden) return;
+        /* Safari/iOS often blocks inline PDF — keep fallback visible in toolbar via Ouvrir */
+      }, 800);
     } else {
-      iframe.hidden = true;
-      iframe.removeAttribute("src");
       imageWrap.hidden = false;
       imageEl.src = src;
       imageEl.alt = title;
+      downloadEl.hidden = false;
     }
 
     viewer.classList.add("is-open");
@@ -71,7 +112,7 @@
     viewer.classList.remove("is-open");
     viewer.setAttribute("aria-hidden", "true");
     document.body.classList.remove("viewer-open");
-    iframe.removeAttribute("src");
+    hidePdfViews();
     imageEl.removeAttribute("src");
     if (!panel || !panel.classList.contains("is-open")) {
       document.body.classList.remove("nav-open");
