@@ -569,11 +569,24 @@ img {
   padding-top: 4rem;
 }
 
+.mosaic-label {
+  margin: 2.5rem 0 1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mosaic-label:first-of-type {
+  margin-top: 0;
+}
+
 .mosaic {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 700px) {
@@ -626,6 +639,7 @@ img {
   padding: 1.35rem 1.5rem;
   background: var(--card);
   border-radius: var(--radius);
+  margin-top: 2.5rem;
 }
 
 .book-cta strong {
