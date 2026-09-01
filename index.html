@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lola Centeno — Communication &amp; Mode</title>
-  <meta name="description" content="Lola Centeno — freelance en communication, stratégie éditoriale et mode. Portfolio, archives et expériences.">
+  <meta name="description" content="Lola Centeno — portfolio éditorial, communication et image de marque. Mode &amp; luxe, Paris.">
   <meta property="og:title" content="Lola Centeno">
-  <meta property="og:description" content="Communication · Mode · Éditorial — Portfolio &amp; archives">
+  <meta property="og:description" content="Communication · Mode · Éditorial — Portfolio">
   <meta property="og:url" content="https://lolacenteno.fr/">
   <meta property="og:image" content="https://lolacenteno.fr/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -14,300 +14,232 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lola Centeno">
-  <meta name="twitter:description" content="Communication · Mode · Éditorial — Portfolio &amp; archives">
+  <meta name="twitter:description" content="Communication · Mode · Éditorial — Portfolio">
   <meta name="twitter:image" content="https://lolacenteno.fr/images/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/lola.css">
 </head>
 <body>
 
   <header class="site-header">
-    <button type="button" class="nav-toggle" id="nav-open" aria-label="Ouvrir le menu">menu.</button>
+    <nav class="header-nav" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#selection">Sélection</a>
+      <a href="#archives">Archives</a>
+    </nav>
     <a href="#" class="brand">Lola Centeno</a>
-    <span class="header-spacer" aria-hidden="true"></span>
+    <a href="#contact" class="header-contact">Contact</a>
+    <button type="button" class="nav-toggle" id="nav-open" aria-label="Ouvrir le menu">Menu</button>
   </header>
 
   <nav class="nav-panel" id="nav-panel" aria-hidden="true">
-    <div class="nav-panel__top">
-      <span class="nav-panel__label">Navigation</span>
-      <button type="button" class="nav-panel__close" id="nav-close" aria-label="Fermer le menu">close.</button>
-    </div>
+    <button type="button" class="nav-panel__close" id="nav-close" aria-label="Fermer le menu">Fermer</button>
     <ul>
       <li><a href="#apropos">À propos</a></li>
       <li><a href="#selection">Sélection</a></li>
-      <li><a href="#experiences">Expériences</a></li>
       <li><a href="#archives">Archives</a></li>
+      <li><a href="#experiences">Expériences</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <section class="hero" id="accueil">
-      <p class="pill">Communication · Mode · Éditorial</p>
-      <h1 class="hero__title">Lola<br>Centeno</h1>
-      <p class="hero__lead">
-        Direction artistique, communication éditoriale et image de marque — freelance, Paris.
-      </p>
-    </section>
-
-    <section class="section" id="apropos">
-      <div class="section-layout">
-        <aside class="section-aside">
-          <p class="pill pill--outline">À propos</p>
-          <nav class="section-nav" aria-label="Sections">
-            <a href="#apropos" class="is-active">À propos</a>
-            <a href="#selection">Sélection</a>
-            <a href="#experiences">Expériences</a>
-            <a href="#archives">Archives</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </aside>
-
-        <div class="section-main">
-          <h2 class="display-title">Une pratique<br>hybride.</h2>
-
-          <div class="prose">
-            <p class="lead">
-              Je travaille la <em>communication</em> entre ligne éditoriale, image et stratégie de marque — de la recherche visuelle à la rédaction, en passant par la coordination de shootings.
-            </p>
-            <p>
-              Mon portfolio réunit trend books, journaux digitaux, analyses magazine et shootings photo. Une curiosité analytique pour les tendances émergentes, la composition visuelle et le langage des marques de mode et de luxe.
-            </p>
-          </div>
+    <section class="spread spread--hero" id="accueil">
+      <div class="spread-hero">
+        <figure class="spread-hero__visual">
+          <img src="images/shooting/web/dsc-8245.jpg" alt="Shooting éditorial Lola Centeno" width="720" height="1080">
+        </figure>
+        <div class="spread-hero__copy">
+          <p class="kicker">Communication · Mode · Paris</p>
+          <h1 class="spread-hero__title">On<br>Éditorial</h1>
+          <p class="deck">
+            Direction artistique, image de marque et rédaction — une pratique entre magazine, mode et stratégie visuelle.
+          </p>
+          <a class="cta-line" href="#selection">
+            <span>Voir la sélection</span>
+            <span class="cta-line__rule" aria-hidden="true"></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section--soft visual-section" id="selection">
-      <div class="section-layout">
-        <aside class="section-aside">
-          <p class="pill pill--outline">Sélection</p>
-        </aside>
-        <div class="section-main">
-          <h2 class="display-title">Regard<br>éditorial.</h2>
-          <p class="section-intro">
-            Travaux visuels et éditoriaux — book, shootings et recherches.
+    <section class="spread spread--feature" id="selection">
+      <div class="feature-grid">
+        <article class="feature-card">
+          <figure class="feature-card__media">
+            <img src="images/book-real/web/extract-01.jpg" alt="Book Lola Centeno Real" loading="lazy">
+          </figure>
+          <div class="feature-card__body">
+            <h2 class="feature-card__title">Book — Lola Centeno Real</h2>
+            <p class="feature-card__text">
+              Portfolio éditorial · Silhouette, allure et composition visuelle. Une lecture en cinq pages, pensée comme un spread magazine.
+            </p>
+            <button type="button" class="text-link" data-pdf="pdf/book-lola-centeno.pdf" data-title="Book — Lola Centeno Real">Consulter le book</button>
+          </div>
+        </article>
+        <figure class="feature-visual">
+          <img src="images/shooting/web/dsc-3871.jpg" alt="Portrait shooting mode" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="gallery-editorial" aria-label="Sélection visuelle">
+        <figure><img src="images/book-real/web/extract-18-web.jpg" alt="Composition éditoriale" loading="lazy"></figure>
+        <figure><img src="images/shooting/web/dsc-3881.jpg" alt="Shooting look 2" loading="lazy"></figure>
+        <figure><img src="images/book-real/web/extract-15.jpg" alt="Portrait mode" loading="lazy"></figure>
+        <figure><img src="images/shooting/web/dsc-6358.jpg" alt="Shooting look 3" loading="lazy"></figure>
+        <figure><img src="images/book-real/web/extract-06.jpg" alt="Détail styling" loading="lazy"></figure>
+        <figure><img src="images/shooting/web/dsc-7540.jpg" alt="Shooting look 5" loading="lazy"></figure>
+      </div>
+
+      <div class="research-row">
+        <p class="research-row__label">Recherche visuelle</p>
+        <div class="research-row__grid">
+          <figure><img src="images/shooting/web/moodboard-01.jpg" alt="Moodboard 1" loading="lazy"></figure>
+          <figure><img src="images/shooting/web/moodboard-02.jpg" alt="Moodboard 2" loading="lazy"></figure>
+          <figure><img src="images/shooting/web/moodboard-03.jpg" alt="Moodboard 3" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="spread spread--about" id="apropos">
+      <div class="about-grid">
+        <h2 class="section-heading">À propos</h2>
+        <div class="about-copy">
+          <p class="about-copy__lead">
+            Je travaille la <em>communication</em> entre ligne éditoriale, image et stratégie de marque — de la recherche visuelle à la rédaction, en passant par la coordination de shootings.
           </p>
+          <p>
+            Mon portfolio réunit trend books, journaux digitaux, analyses magazine et shootings photo. Une attention portée aux tendances émergentes, à la composition visuelle et au langage des marques de mode et de luxe.
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <p class="mosaic-label">Book — Lola Centeno Real</p>
-          <div class="mosaic" aria-label="Extraits du book portfolio">
-            <figure class="mosaic__item mosaic__item--tall"><img src="images/book-real/web/extract-01.jpg" alt="Silhouette éditoriale 1" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/book-real/web/extract-02.jpg" alt="Silhouette éditoriale 2" loading="lazy"></figure>
-            <figure class="mosaic__item mosaic__item--wide"><img src="images/book-real/web/extract-18-web.jpg" alt="Composition mode Lola Centeno" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/book-real/web/extract-03.jpg" alt="Silhouette éditoriale 3" loading="lazy"></figure>
-            <figure class="mosaic__item mosaic__item--tall"><img src="images/book-real/web/extract-15.jpg" alt="Portrait mode" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/book-real/web/extract-06.jpg" alt="Détail styling" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/book-real/web/extract-07.jpg" alt="Composition couleur" loading="lazy"></figure>
-            <figure class="mosaic__item mosaic__item--tall"><img src="images/book-real/web/extract-16.jpg" alt="Portrait éditorial" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/book-real/web/extract-04.jpg" alt="Silhouette éditoriale 4" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/book-real/web/extract-14.jpg" alt="Lookbook" loading="lazy"></figure>
-          </div>
+    <section class="spread spread--archives" id="archives">
+      <div class="archives-head">
+        <h2 class="section-heading">Archives</h2>
+        <p class="archives-head__sub">Travaux &amp; publications — lecture et téléchargement.</p>
+      </div>
+      <ul class="archive-index">
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/book-lola-centeno.pdf" data-title="Book — Lola Centeno Real">
+            <span class="archive-index__title">Book — Lola Centeno Real</span>
+            <span class="archive-index__meta">Portfolio éditorial · 2026</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/trend-book.pdf" data-title="Trend Book">
+            <span class="archive-index__title">Trend Book</span>
+            <span class="archive-index__meta">Beauty 2026-2027 · Rétrofuturisme</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/tendances-prospectives.pdf" data-title="Tendances prospectives">
+            <span class="archive-index__title">Tendances prospectives</span>
+            <span class="archive-index__meta">Analyse macro &amp; scénarios mode</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/avant-garde.pdf" data-title="Analyse magazine">
+            <span class="archive-index__title">Analyse magazine</span>
+            <span class="archive-index__meta">Purple · Ligne éditoriale</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/dictionnary-of-styles-products-and-trends.pdf" data-title="Dictionary of styles">
+            <span class="archive-index__title">Dictionary of styles</span>
+            <span class="archive-index__meta">Produits, tendances &amp; typologies</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/journal-digital.pdf" data-title="Journal digital">
+            <span class="archive-index__title">Journal digital</span>
+            <span class="archive-index__meta">Rédaction · Louis Vuitton · Luxe</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/journal-digital2.pdf" data-title="Journal digital II">
+            <span class="archive-index__title">Journal digital II</span>
+            <span class="archive-index__meta">Suite éditoriale · communication de marque</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="archive-index__item" data-pdf="pdf/cahier-de-recherches.pdf" data-title="Cahier de recherches">
+            <span class="archive-index__title">Cahier de recherches</span>
+            <span class="archive-index__meta">Moodboards &amp; références visuelles</span>
+            <span class="archive-index__link">PDF</span>
+          </button>
+        </li>
+      </ul>
+    </section>
 
-          <p class="mosaic-label">Shooting photo</p>
-          <div class="mosaic mosaic--shooting" aria-label="Sélection shooting photo">
-            <figure class="mosaic__item mosaic__item--tall"><img src="images/shooting/web/dsc-3871.jpg" alt="Shooting mode — look 1" loading="lazy"></figure>
-            <figure class="mosaic__item mosaic__item--tall"><img src="images/shooting/web/dsc-3881.jpg" alt="Shooting mode — look 2" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/shooting/web/dsc-6358.jpg" alt="Shooting mode — look 3" loading="lazy"></figure>
-            <figure class="mosaic__item mosaic__item--tall"><img src="images/shooting/web/dsc-8245.jpg" alt="Shooting mode — look 4" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/shooting/web/dsc-7540.jpg" alt="Shooting mode — look 5" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/shooting/web/editorial-01.jpg" alt="Direction artistique éditoriale" loading="lazy"></figure>
-          </div>
-
-          <p class="mosaic-label">Recherche visuelle</p>
-          <div class="mosaic mosaic--research" aria-label="Moodboards et recherche visuelle">
-            <figure class="mosaic__item"><img src="images/shooting/web/moodboard-01.jpg" alt="Moodboard recherche 1" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/shooting/web/moodboard-02.jpg" alt="Moodboard recherche 2" loading="lazy"></figure>
-            <figure class="mosaic__item"><img src="images/shooting/web/moodboard-03.jpg" alt="Moodboard recherche 3" loading="lazy"></figure>
-          </div>
-
-          <div class="book-cta">
+    <section class="spread spread--cv" id="experiences">
+      <div class="cv-grid">
+        <h2 class="section-heading">Parcours</h2>
+        <ul class="cv-list">
+          <li>
+            <span class="cv-list__year">2024</span>
             <div>
-              <strong>Book — Lola Centeno Real</strong>
-              <p>Version complète du portfolio, 5 pages · 2026.</p>
+              <strong>Assistante directrice de création</strong>
+              <span>The Parisian Vintage &amp; The Off-Note — Paris</span>
             </div>
-            <button type="button" class="btn btn--solid" data-pdf="pdf/book-lola-centeno.pdf" data-title="Book — Lola Centeno Real">Ouvrir le book</button>
-          </div>
+          </li>
+          <li>
+            <span class="cv-list__year">2024</span>
+            <div>
+              <strong>Conseillère de vente</strong>
+              <span>Isabel Marant — Paris</span>
+            </div>
+          </li>
+          <li>
+            <span class="cv-list__year">2024</span>
+            <div>
+              <strong>Hôtesse d’accueil</strong>
+              <span>La Fabrica — Paris</span>
+            </div>
+          </li>
+          <li>
+            <span class="cv-list__year">2023</span>
+            <div>
+              <strong>Habilleuse de défilé</strong>
+              <span>Fashion Week AW — Celinekwan</span>
+            </div>
+          </li>
+          <li>
+            <span class="cv-list__year">2023 — 26</span>
+            <div>
+              <strong>MBA Fashion Business</strong>
+              <span>LISAA Mode Paris</span>
+            </div>
+          </li>
+        </ul>
+        <div class="cv-download">
+          <button type="button" class="text-link" data-pdf="pdf/lola-centeno-cv.pdf" data-title="CV — Lola Centeno">Voir le CV</button>
+          <a class="text-link" href="pdf/lola-centeno-cv.pdf" download="lola-centeno-cv.pdf">Télécharger</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--soft" id="experiences">
-      <div class="section-layout section-layout--reverse">
-        <aside class="section-aside">
-          <p class="pill pill--outline">Expériences</p>
-        </aside>
-        <div class="section-main">
-          <h2 class="display-title display-title--right">Parcours<br>&amp; terrain.</h2>
-
-          <ul class="timeline">
-            <li>
-              <span class="timeline__year">2024</span>
-              <div class="timeline__body">
-                <h3>Assistante directrice de création</h3>
-                <p class="timeline__org">The Parisian Vintage &amp; The Off-Note — Freelance, Paris</p>
-                <p>Concept design, campagnes créatives, coordination visuelle, suivi shootings, recherche artistique.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__year">2024</span>
-              <div class="timeline__body">
-                <h3>Conseillère de vente</h3>
-                <p class="timeline__org">Isabel Marant — Stage, Paris</p>
-                <p>Conseil personnalisé, stock, merchandising, CRM, connaissance produit approfondie.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__year">2024</span>
-              <div class="timeline__body">
-                <h3>Hôtesse d’accueil polyvalente</h3>
-                <p class="timeline__org">La Fabrica — Freelance, Paris</p>
-                <p>Accueil client, gestion des espaces et stocks, réservations, coordination sous pression.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__year">2023</span>
-              <div class="timeline__body">
-                <h3>Habilleuse de défilé</h3>
-                <p class="timeline__org">Fashion Week AW — Celinekwan, Paris</p>
-                <p>Organisation backstage, communication et attention au détail sur les looks.</p>
-              </div>
-            </li>
-            <li>
-              <span class="timeline__year">2023 — 2026</span>
-              <div class="timeline__body">
-                <h3>MBA Fashion Business</h3>
-                <p class="timeline__org">LISAA Mode Paris — Fashion &amp; Luxury Marketing</p>
-                <p>Certification LVMH : Operations &amp; Supply Chain + Retail &amp; Customer Experience.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="archives">
-      <div class="section-layout">
-        <aside class="section-aside">
-          <p class="pill pill--outline">Archives</p>
-        </aside>
-        <div class="section-main">
-          <h2 class="display-title">Travaux &amp;<br>publications.</h2>
-          <p class="section-intro">
-            Projets éditoriaux disponibles en lecture et téléchargement.
-          </p>
-
-          <ul class="archive-list">
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/book-lola-centeno.pdf" data-title="Book — Lola Centeno Real">
-                <span class="archive-item__index">01</span>
-                <span class="archive-item__content">
-                  <strong>Book — Lola Centeno Real</strong>
-                  <span>Portfolio éditorial · Silhouette &amp; allure · 2026</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/trend-book.pdf" data-title="Trend Book">
-                <span class="archive-item__index">02</span>
-                <span class="archive-item__content">
-                  <strong>Trend Book</strong>
-                  <span>Spring Summer 17 · Beauty 2026-2027 · Rétrofuturisme</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/tendances-prospectives.pdf" data-title="Tendances prospectives">
-                <span class="archive-item__index">03</span>
-                <span class="archive-item__content">
-                  <strong>Tendances prospectives</strong>
-                  <span>Analyse macro &amp; scénarios mode</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/avant-garde.pdf" data-title="Analyse magazine">
-                <span class="archive-item__index">04</span>
-                <span class="archive-item__content">
-                  <strong>Analyse magazine</strong>
-                  <span>Purple · Ligne éditoriale &amp; composition visuelle</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/dictionnary-of-styles-products-and-trends.pdf" data-title="Dictionary of styles">
-                <span class="archive-item__index">05</span>
-                <span class="archive-item__content">
-                  <strong>Dictionary of styles</strong>
-                  <span>Produits, tendances &amp; typologies mode</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/journal-digital.pdf" data-title="Journal digital">
-                <span class="archive-item__index">06</span>
-                <span class="archive-item__content">
-                  <strong>Journal digital</strong>
-                  <span>Rédaction éditoriale · Louis Vuitton · Luxe</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/journal-digital2.pdf" data-title="Journal digital II">
-                <span class="archive-item__index">07</span>
-                <span class="archive-item__content">
-                  <strong>Journal digital II</strong>
-                  <span>Suite éditoriale · communication de marque</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="archive-item" data-pdf="pdf/cahier-de-recherches.pdf" data-title="Cahier de recherches">
-                <span class="archive-item__index">08</span>
-                <span class="archive-item__content">
-                  <strong>Cahier de recherches</strong>
-                  <span>Recherche créative · moodboards &amp; références visuelles</span>
-                </span>
-                <span class="archive-item__action">PDF →</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--soft" id="contact">
-      <div class="section-layout">
-        <aside class="section-aside">
-          <p class="pill pill--outline">Contact</p>
-        </aside>
-        <div class="section-main contact">
-          <h2 class="display-title">Travaillons<br>ensemble.</h2>
-          <p class="section-intro">
+    <section class="spread spread--contact" id="contact">
+      <div class="contact-grid">
+        <h2 class="section-heading">Contact</h2>
+        <div class="contact-body">
+          <p class="contact-body__intro">
             Disponible pour missions en communication, direction éditoriale et création de contenus mode &amp; luxe.
           </p>
-          <a class="contact__email" href="mailto:lolacenteno03@gmail.com">lolacenteno03@gmail.com</a>
-          <div class="contact__links">
+          <a class="contact-body__email" href="mailto:lolacenteno03@gmail.com">lolacenteno03@gmail.com</a>
+          <div class="contact-body__links">
             <a href="tel:+33768762906">+33 7 68 76 29 06</a>
             <a href="https://www.linkedin.com/in/lola-centeno" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-          <div class="cv-row cv-row--contact">
-            <div>
-              <strong>CV</strong>
-              <p>Parcours et expériences — format PDF.</p>
-            </div>
-            <div class="cv-row__actions">
-              <button type="button" class="btn btn--ghost" data-pdf="pdf/lola-centeno-cv.pdf" data-title="CV — Lola Centeno">Voir</button>
-              <a class="btn btn--solid" href="pdf/lola-centeno-cv.pdf" download="lola-centeno-cv.pdf">Télécharger</a>
-            </div>
           </div>
         </div>
       </div>
@@ -327,7 +259,7 @@
         <div class="viewer__actions">
           <a class="viewer__open" id="viewer-open-tab" href="#" target="_blank" rel="noopener">Ouvrir</a>
           <a class="viewer__download" id="viewer-download" href="#" download target="_blank" rel="noopener">Télécharger</a>
-          <button type="button" class="viewer__close" id="viewer-close" aria-label="Fermer le viewer">Fermer</button>
+          <button type="button" class="viewer__close" id="viewer-close" aria-label="Fermer">Fermer</button>
         </div>
       </header>
       <div class="viewer__content">
@@ -335,7 +267,7 @@
         <embed class="viewer__embed" id="viewer-embed" type="application/pdf" hidden>
         <div class="viewer__fallback" id="viewer-fallback" hidden>
           <p>Le lecteur PDF ne s’affiche pas dans votre navigateur.</p>
-          <a class="btn btn--solid" id="viewer-fallback-link" href="#" target="_blank" rel="noopener">Ouvrir le PDF</a>
+          <a class="text-link text-link--light" id="viewer-fallback-link" href="#" target="_blank" rel="noopener">Ouvrir le PDF</a>
         </div>
         <div class="viewer__image-wrap" id="viewer-image-wrap" hidden>
           <img class="viewer__image" id="viewer-image" alt="">
