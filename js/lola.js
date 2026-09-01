@@ -8,14 +8,14 @@
     function openNav() {
       panel.classList.add("is-open");
       panel.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("nav-open");
     }
 
     function closeNav() {
       panel.classList.remove("is-open");
       panel.setAttribute("aria-hidden", "true");
       if (!document.body.classList.contains("viewer-open")) {
-        document.body.style.overflow = "";
+        document.body.classList.remove("nav-open");
       }
     }
 
@@ -64,7 +64,6 @@
     viewer.classList.add("is-open");
     viewer.setAttribute("aria-hidden", "false");
     document.body.classList.add("viewer-open");
-    document.body.style.overflow = "hidden";
     closeViewerBtn.focus();
   }
 
@@ -74,7 +73,9 @@
     document.body.classList.remove("viewer-open");
     iframe.removeAttribute("src");
     imageEl.removeAttribute("src");
-    document.body.style.overflow = panel && panel.classList.contains("is-open") ? "hidden" : "";
+    if (!panel || !panel.classList.contains("is-open")) {
+      document.body.classList.remove("nav-open");
+    }
   }
 
   function bindOpeners(selector) {
@@ -95,6 +96,13 @@
 
   bindOpeners("[data-pdf]");
   bindOpeners("[data-image]");
+
+  var header = document.querySelector(".site-header");
+  if (header) {
+    window.addEventListener("scroll", function () {
+      header.classList.toggle("is-scrolled", window.scrollY > 24);
+    }, { passive: true });
+  }
 
   closeViewerBtn.addEventListener("click", closeViewer);
   backdrop.addEventListener("click", closeViewer);
